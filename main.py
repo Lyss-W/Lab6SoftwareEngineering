@@ -11,7 +11,7 @@
 #       -Break
 
 from encoder_file import encoder
-
+from encoder_file import decoder
 
 def main():
     while True:
@@ -31,7 +31,9 @@ def main():
             encoded_pass = encoder(password)
             print(f"Your password has been encoded and stored!\n")
         elif user_input == 2:
-            pass
+            password = input("Please enter your password to decode: ")
+            decoded_pass = decoder(password)
+            print(f"Your password has been encoded and stored!\n")
         elif user_input == 3:
             break
 
