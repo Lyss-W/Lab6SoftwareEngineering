@@ -31,9 +31,8 @@ def main():
             encoded_pass = encoder(password)
             print(f"Your password has been encoded and stored!\n")
         elif user_input == 2:
-            password = input("Please enter your password to decode: ")
             decoded_pass = decoder(password)
-            print(f"Your password has been encoded and stored!\n")
+            print(f"The encoded password is {encoded_pass}, and the original password is {decoded_pass}.\n")
         elif user_input == 3:
             break
 
